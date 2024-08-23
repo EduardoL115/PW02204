@@ -1,0 +1,39 @@
+
+h1 {
+    color: #87ceeb;
+}
+
+h1 span{
+    color: #800080;
+}
+
+h2:nth-of-type(3){
+    color: #cccc11;
+    font-family:cursive;
+}
+
+ul > li:nth-of-type(even){
+    color: #179317;
+}
+.tabla{
+    background-color: #179317;
+}
+.lista-borde{
+    border: 1px #000000;
+    background-color: #d49e4d;    
+}
+.link{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: #2fbf9b;
+}
+.link:visited {
+    color: #ff0000; 
+}
+body {
+    background-image: url("https://www.malwarebytes.com/wp-content/uploads/sites/2/2024/03/Apex_legends_logo.png?w=1200");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
