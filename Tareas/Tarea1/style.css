@@ -1,6 +1,7 @@
 .header {
     text-align: left;
     margin-bottom: 20px;
+    color: #0e3369;
 }
 
 .section {
@@ -30,8 +31,11 @@ td {
 .align-left{
     text-align: left;
 }
+h2{
+    color: #16708b;
+}
 /* 
-  Código CSS desarrollado con la ayuda de ChatGPT de OpenAI.
+  Algunos códigos de CSS desarrollados con la ayuda de ChatGPT de OpenAI.
   Las técnicas CSS como `justify-content`, `align-items` y margin: auto, fueron recomendadas por ChatGPT, ya que aún no se han cubierto en clase.
   Fecha: 22 de agosto de 2024.
 */
