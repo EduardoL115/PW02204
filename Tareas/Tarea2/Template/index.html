@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Editorial con Menú Lateral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="container">
+                <h1>Mi Plantilla Personal</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li class="hideOnMobile"><a href="#inicio">Inicio</a></li>
+                <li class="hideOnMobile"><a href="#acerca">Acerca</a></li>
+                <li class="hideOnMobile"><a href="#servicios">Servicios</a></li>
+                <li class="hideOnMobile"><a href="#contacto">Contacto</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        <!--Menú desarrollado con ayuda del video https://www.youtube.com/watch?v=U8smiWQ8Seg del canal Coding2GO-->
+
+        <!-- Sección Principal -->
+        <section id="inicio" class="main-section">
+            <div class="container">
+                <h2>Bienvenido a Mi Página Web</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus velit ac ante molestie, in mattis justo laoreet. 
+                Duis ornare, justo nec pellentesque malesuada, risus magna consectetur libero, rhoncus semper ipsum lacus at enim. 
+                In vehicula, leo vel posuere posuere, metus lectus consequat erat, at mattis nibh libero a justo. Phasellus molestie nibh nibh, 
+                in molestie turpis fringilla sit amet. Integer tempor sem eget rutrum eleifend. Nunc libero est, iaculis et aliquet a, 
+                vestibulum eget metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                Nullam a turpis a erat interdum tempor sit amet vel lacus. Suspendisse at velit non dui maximus gravida sed a tellus. 
+                Quisque feugiat neque sed turpis elementum, id mattis ipsum sodales.</p>
+                <a href="#acerca" class="button">Descubre Más</a>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de -->
+        <section id="acerca" class="main-section">
+            <div class="container">
+                <h2>Acerca de la plantilla</h2>
+                <p>Vestibulum suscipit cursus vehicula. Aliquam vitae tellus ligula. Vestibulum orci purus, 
+                vestibulum quis maximus eu, porttitor sit amet ante. Curabitur tristique lectus ut felis vulputate, 
+                sit amet dictum metus sodales. Etiam iaculis cursus magna eu rhoncus. Praesent iaculis elit eget risus pharetra, 
+                vel convallis odio tempus. Maecenas rhoncus nisi nec metus accumsan tincidunt. Nullam id nisl congue, 
+                interdum purus ac, accumsan arcu. Curabitur sit amet nisi eget nisl ultricies eleifend non id mi. 
+                Nam ut interdum leo. Aenean elementum dolor in dictum porta. Curabitur vestibulum laoreet sollicitudin.</p>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="main-section">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Servicio 1</h3>
+                        <p>Descripción breve</p>
+                        <div class="image-container">
+                            <img src="/Template/resources/laptop.jpg" alt="laptop" class="image-item">
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <h3>Servicio 2</h3>
+                        <p>Descripción breve</p>
+                        <div class="image-container">
+                            <img src="/Template/resources/servidor.jpg" alt="servidor" class="image-item">
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <h3>Servicio 3</h3>
+                        <p>Descripción breve</p>
+                        <div class="image-container">
+                            <img src="/Template/resources/AI.jpeg" alt="Ai" class="image-item">
+                            <img src="/Template/resources/whatAI.webp" alt="Ai" class="image-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="main-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Mi Plantilla. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
